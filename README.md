@@ -1,7 +1,7 @@
-#BethYw? StatsWales Data Analysis Tool
+# BethYw? StatsWales Data Analysis Tool
 ___
 
-##Information
+## Information
 Compiled using gcc C++ compiler version 8.3.0 and C++ standard 14
 
 External Libraries used : [CXXOpts](https://github.com/jarro2783/cxxopts), 
@@ -13,69 +13,69 @@ All of the datasets group a series of measures over a number of years. Each of t
 local authority where the readings were taken.
 
 ___
-##Arguments
+## Arguments
 
-* ###_--directory_
+* ### _--directory_
   This argument allows the user to specify a path to a directory containing the StatsWales datasets.
   By default this points to /datasets.
 
-  ####Usage:
+  #### Usage:
   ```bethyw --directory /files/directory```
 
-* ###_--dataset / -d_
+* ### _--dataset / -d_
   This argument allows the user to specify the dataset(s) they wish to load into the program.
   By default the program loads all datasets in the given directory.
 
-  ####Usage:
+  #### Usage:
   Single dataset: 
   `bethyw -d biz`
   
   Multiple datasets:
   `bethyw -d popden,aqi,complete-area`
 
-* ###_--area / -a_
+* ### _--area / -a_
 
   This argument allows the user to specify what local authorities should be included in the output.
   By default all local authorities will be included. This argument is case insensitive and will 
   include areas with a full or partial match with the argument.
 
-  ####Usage:
+  #### Usage:
   Single area:
   `bethyw -a swansea`
   
   Multiple areas:
   `bethyw -a swansea,cardiff`
 
-* ###_--measure / -m_
+* ### _--measure / -m_
 
   This argument allows the user to specify what measures should be included in the output.
 
-  ####Usage:
+  #### Usage:
   Single measure:
   `bethyw -m pop`
   
   Multiple measures:
   `bethyw -m pop,dens`
 
-* ###_--year / -y_
+* ### _--year / -y_
 
   This argument allows the user to specify a year or range of years to be imported from the datasets.
-  ####Usage:
+  #### Usage:
   Single year :
   `bethyw -y 2000`
 
   Year range:
   `bethyw -y 2000-2020`
 
-* ###_--json / -j_
+* ### _--json / -j_
 
   This argument specifies whether the output will be formatted as a JSON string rather than tables.
 
-  ####Usage:
+  #### Usage:
   `bethyw -j`
 
 ___
-##Datasets
+## Datasets
 * **popu1009.json**
 
   Contains population density information by area.
@@ -122,7 +122,7 @@ ___
 
   Contains the measures : `area|pop|dens`.
 ___
-##Examples
+## Examples
 
 Retrieve air quality information for Swansea between the years of 2007 and 2014:
 
