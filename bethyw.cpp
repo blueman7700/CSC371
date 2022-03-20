@@ -3,7 +3,7 @@
   | BETH YW? WELSH GOVERNMENT DATA PARSER |
   +---------------------------------------+
 
-  AUTHOR: Oliver Morris - 979663
+  AUTHOR: Oliver Morris - xxxxxx
 
   This file contains all the helper functions for initialising and running
   Beth Yw? In languages such as Java, this would be a class, but we really
@@ -72,11 +72,11 @@ int BethYw::run(int argc, char *argv[]) {
 				BethYw::loadAreas(data, dir, areasFilter);
 
 				BethYw::loadDatasets(data,
-									 dir,
-									 datasetsToImport,
-									 areasFilter,
-									 measuresFilter,
-									 yearsFilter);
+							dir,
+							datasetsToImport,
+							areasFilter,
+							measuresFilter,
+							yearsFilter);
 			} catch (std::out_of_range &e1) {
 				std::cerr << "Error importing dataset:" << std::endl << e1.what() << std::endl;
 			} catch (std::runtime_error &e2) {
