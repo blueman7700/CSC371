@@ -8,7 +8,7 @@ External Libraries used : [CXXOpts](https://github.com/jarro2783/cxxopts),
 [JSON for Modern C++](https://github.com/nlohmann/json), 
 [Catch2 Unit Testing Framework](https://github.com/catchorg/Catch2).
 
-This program was build to read and query a number of datasets from the StatsWales website in both csv and JSON formats.
+This program was built to read and query a number of datasets from the StatsWales website in both csv and JSON formats.
 All of the datasets group a series of measures over a number of years. Each of these measures is organised by the 
 local authority where the readings were taken.
 
